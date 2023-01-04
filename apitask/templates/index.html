@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+    <style>
+table,th,td
+{
+border:1px solid black;
+border-collapse:collapse;
+}
+</style>
+	</head>
+	<body>
+	the nave :{{data}}
+	</body>
+    <table>
+        <tr>
+          <th>list</th>
+          <th>fund</th>
+          <th>nav</th>
+        </tr>
+      {%for i in data%}
+      <tr>
+        <th>{{i.id}}</th>
+        <th>{{i.fund}}</th>
+        <th>{{i.nav}}</th>
+      </tr>
+      {%endfor%}
+      </table> 
+</html>
