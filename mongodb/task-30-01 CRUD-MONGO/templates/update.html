@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+{{data}}
+<form action="{{url_for('update',id=data.id)}}" method="post">
+
+<input type="number" name="id" value="{{data['id']}}" placeholder="Enter Id"><br>
+<input type="text" name="name"  value="{{data['name']}}" placeholder="Enter Name"><br>
+<input type="text" name="degree" value="{{data['degree']}}" placeholder="Enter Degree"><br>
+<input type="submit" value="submit">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<table border="1px">
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>COURSE</th>
+    </tr>
+    {%for i in datas%}
+    <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.course}}</td>
+</tr>
+    {%endfor%}
+</table>
+
+</body>

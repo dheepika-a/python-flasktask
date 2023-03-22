@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<table border="1px">
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>DEGREE</th>
+</tr>
+{%for i in data%}
+<tr>
+    <td>{{i.id}}</td>
+    <td>{{i.name}}</td>
+    <td>{{i.degree}}</td>
+<td>  <a href="/update">UPDATE</a></td>
+  <a href=""> <td>DELETE</td>
+</tr>
+{%endfor%}
+
+
+
+
+</table>
+
+
+
+
+
+
+</body>
+</html>

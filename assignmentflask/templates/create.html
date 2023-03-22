@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+    table,th,td
+    {
+    border:1px solid black;
+    border-collapse:collapse;
+    }
+    
+    </style>
+    </head>
+<body>   
+{{data}} 
+<form action="#" method="POST">
+    <input type="text" id="title" name="title" placeholder="title"><br>
+    <input type="text" id="content" name="content" placeholder="content"><br>
+    <input type="text" id="published" name="published" placeholder="published"><br>
+    <input type="submit" value="submit">
+
+
+</form>
+    <table>
+        <tr>
+          <th>title</th>
+          <th>content</th>
+          <th>published</th>
+        </tr>
+        {%for i in data%} 
+       <tr>
+          <td>{{i.title}}</td>
+          <td>{{i.content}}</td>
+          <td>{{i.published}}</td>
+       </tr>
+          {%endfor%} 
+    </table>
+</body>
+</html>
